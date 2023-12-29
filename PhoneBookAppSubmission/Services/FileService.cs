@@ -13,9 +13,9 @@ public interface IFileService
 public class FileService(string filePath) : IFileService
 {
    
-    private readonly string _filePath = filePath;
+    private readonly string _filePath = filePath; //sökväg för filen.
 
-    public bool SaveContentToFile(string content)
+    public bool SaveContentToFile(string content) //Sparar ner kontakten till .json.
     {
         try
         {
@@ -30,11 +30,11 @@ public class FileService(string filePath) : IFileService
         return false;
 
     }
-    public string GetContentFromFile()
+    public string GetContentFromFile() //Hämtar .json filen.
     {
         try
         {
-            if (File.Exists(_filePath))
+            if (File.Exists(_filePath)) //kontrollerar ifall filen finns.
             {
                 using var sr = new StreamReader(_filePath);
                 return sr.ReadToEnd();

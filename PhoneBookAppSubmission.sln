@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookAppSubmission", "PhoneBookAppSubmission\PhoneBookAppSubmission.csproj", "{71B1AE06-35DF-475F-A812-5B065B0A5964}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBookAppSubmission", "PhoneBookAppSubmission\PhoneBookAppSubmission.csproj", "{71B1AE06-35DF-475F-A812-5B065B0A5964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookAppSubmission.test", "PhoneBookAppSubmission.test\PhoneBookAppSubmission.test.csproj", "{6D605430-AF9C-415E-B006-9E334152E2EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{71B1AE06-35DF-475F-A812-5B065B0A5964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71B1AE06-35DF-475F-A812-5B065B0A5964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71B1AE06-35DF-475F-A812-5B065B0A5964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D605430-AF9C-415E-B006-9E334152E2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D605430-AF9C-415E-B006-9E334152E2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D605430-AF9C-415E-B006-9E334152E2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D605430-AF9C-415E-B006-9E334152E2EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

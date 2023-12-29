@@ -2,6 +2,7 @@
 
 public enum ServiceStatus
 {
+    //CRUD 
     FAILED = 0,
     SUCCESSED = 1,
     ALREADY_EXISTS = 2,
