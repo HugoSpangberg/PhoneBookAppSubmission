@@ -115,7 +115,7 @@ public class MenuService : IMenuService
 
             DisplayMenuTitle("Delete a Contact by Email");
             Console.Write("\tWrite the email of the contact you want to delete: ");
-            var email = Console.ReadLine()!;
+            var email = Console.ReadLine()!.ToLower();
 
             IServiceResult result = _contactService.DeleteContactFromListbyEmail(email);
 
@@ -144,7 +144,7 @@ public class MenuService : IMenuService
         Console.Clear();
         var res = _contactService.GetAllContactsFromList();
         DisplayMenuTitle("View All Contacts");
-        if(res is List<ContactUser> contactList) 
+        if(res is List<ContactUser> contactList && contactList.Count > 0) 
         {
             
             //Loopar ut alla kontaker som finns i listan.
@@ -187,6 +187,11 @@ public class MenuService : IMenuService
                 }
                 PressAnyKey();
             }
+        }
+        else
+        {
+            Console.WriteLine("\tNo Contacts Found..");
+            PressAnyKey();
         }
     }
 
